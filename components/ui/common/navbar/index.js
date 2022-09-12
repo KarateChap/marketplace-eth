@@ -1,6 +1,10 @@
+import { useWeb3 } from "@components/providers";
 import Link from "next/link";
+import { Button } from "@components/ui/common";
 
 export default function Navbar() {
+  const { connect, isLoading, isWeb3Loaded } = useWeb3();
+
   return (
     <section>
       <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -29,12 +33,13 @@ export default function Navbar() {
                   Wishlist
                 </a>
               </Link>
-              <a
-                href="#"
-                className="font-medium mr-8 text-indigo-600 hover:text-indigo-500"
-              >
-                Log in
-              </a>
+              {isLoading ? (
+                <Button onClick={connect}>Loading...</Button>
+              ) : isWeb3Loaded ? (
+                <Button onClick={connect}>Connect</Button>
+              ) : (
+                <Button onClick={connect}>Install Metamask</Button>
+              )}
             </div>
           </div>
         </nav>
