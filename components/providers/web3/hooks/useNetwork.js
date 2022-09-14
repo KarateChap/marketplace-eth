@@ -7,7 +7,7 @@ const NETWORKS = {
   4: "Rinkeby Test Network",
   5: "Goerli Test Network",
   42: "Kovan Test Network",
-  56: "Binance Smart Chain",
+  97: "Binance Smart Chain",
   1337: "Ganache",
   25: "Cronos Network",
 };
