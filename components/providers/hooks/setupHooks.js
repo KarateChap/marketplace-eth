@@ -1,8 +1,8 @@
-import { handler as createUserAccount } from "./useAccount";
+import { handler as createUseAccount } from "./useAccount";
 
 export const setupHooks = (web3) => {
   return {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    useAccount: createUserAccount(web3),
+    useAccount: createUseAccount(web3),
   };
 };
