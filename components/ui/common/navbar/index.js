@@ -1,13 +1,13 @@
-import { useWeb3 } from "@components/providers";
-import Link from "next/link";
-import { Button } from "@components/ui/common";
-import { useAccount } from "@components/hooks/web3";
-import { useRouter } from "next/router";
+import { useWeb3 } from "@components/providers"
+import Link from "next/link"
+import { Button } from "@components/ui/common"
+import { useAccount } from "@components/hooks/web3"
+import { useRouter } from "next/router"
 
 export default function Navbar() {
-  const { connect, isLoading, requireInstall } = useWeb3();
-  const { account } = useAccount();
-  const { pathname } = useRouter();
+  const { connect, isLoading, requireInstall } = useWeb3()
+  const { account } = useAccount()
+  const { pathname } = useRouter()
 
   return (
     <section>
@@ -66,5 +66,5 @@ export default function Navbar() {
         </div>
       )}
     </section>
-  );
+  )
 }

@@ -116,5 +116,5 @@ export default function Card() {
         </dl>
       </div>
     </div>
-  );
+  )
 }

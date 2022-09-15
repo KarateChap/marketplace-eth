@@ -1,5 +1,5 @@
-import Course from "@pages/courses/[slug]";
-import Image from "next/image";
+import Course from "@pages/courses/[slug]"
+import Image from "next/image"
 export default function CourseHero({ title, description, image }) {
   return (
     <section>
@@ -61,5 +61,5 @@ export default function CourseHero({ title, description, image }) {
         </div>
       </div>
     </section>
-  );
+  )
 }

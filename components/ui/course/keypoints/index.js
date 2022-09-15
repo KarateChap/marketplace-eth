@@ -39,5 +39,5 @@ export default function Keypoints({ points }) {
         </div>
       </div>
     </section>
-  );
+  )
 }

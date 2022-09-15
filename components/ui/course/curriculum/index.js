@@ -6,10 +6,10 @@ export default function Curriculum({ locked }) {
     "Programing in C++",
     "How to write For Loops",
     "Safe operator",
-  ];
+  ]
 
   const statusClass =
-    "px-2 inline-flex text-xs leading-5 font-semibold rounded-full";
+    "px-2 inline-flex text-xs leading-5 font-semibold rounded-full"
 
   return (
     <section className="max-w-5xl mx-auto">
@@ -77,5 +77,5 @@ export default function Curriculum({ locked }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
