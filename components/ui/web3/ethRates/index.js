@@ -33,7 +33,7 @@ export default function EthRates() {
       <div className="flex flex-1 items-stretch text-center">
         <div className="p-10 border drop-shadow rounded-md">
           <div className="flex items-center">
-            <span className="text-2xl font-bold">{COURSE_PRICE}</span>
+            <span className="text-2xl font-bold">{eth.perItem}</span>
             <Image
               layout="fixed"
               height="35"
